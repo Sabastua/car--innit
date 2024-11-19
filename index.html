@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<head>
+    
+    <title>Car Dealership Selection</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="progress">
+            <div class="progress-dot" id="dot1"></div>
+            <div class="progress-dot" id="dot2"></div>
+            <div class="progress-dot" id="dot3"></div>
+        </div>
+
+        <div id="page1" class="page active">
+            <h2>Select Vehicle Type</h2>
+            <div class="vehicle-grid">
+                <div class="vehicle-card" data-type="sedan">
+                    <input type="radio" name="vehicleType" value="sedan" class="hidden-radio">
+                    <h3>Sedan</h3>
+                </div>
+                <div class="vehicle-card" data-type="suv">
+                    <input type="radio" name="vehicleType" value="suv" class="hidden-radio">
+                    <h3>SUV</h3>
+                </div>
+                <div class="vehicle-card" data-type="electric">
+                    <input type="radio" name="vehicleType" value="electric" class="hidden-radio">
+                    <h3>Electric</h3>
+                </div>
+            </div>
+        </div>
+
+        <div id="page2" class="page">
+            <h2>Choose Your Vehicle</h2>
+            <div id="vehicleSelection" class="vehicle-grid"></div>
+        </div>
+
+        <div id="page3" class="page">
+            <h2>Contact Information</h2>
+            <input type="text" placeholder="Full Name" id="name">
+            <input type="email" placeholder="Email Address" id="email">
+            <input type="tel" placeholder="Phone Number" id="phone">
+            
+            <h3>Preferred Contact Method</h3>
+            <label>
+                <input type="radio" name="contactMethod" value="email" checked> Email
+            </label>
+            <label>
+                <input type="radio" name="contactMethod" value="phone"> Phone
+            </label>
+
+            <h3>Additional Services</h3>
+            <label>
+                <input type="checkbox"> Schedule Test Drive
+            </label>
+            <label>
+                <input type="checkbox"> Request Financing
+            </label>
+            <label>
+                <input type="checkbox"> Trade-In Evaluation
+            </label>
+        </div>
+
+        <div class="navigation">
+            <button id="prevBtn" style="display:none;">Previous</button>
+            <button id="nextBtn">Next</button>
+        </div>
+    </div>
+
+    
+</body>
+</html>
